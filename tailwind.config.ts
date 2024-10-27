@@ -1,3 +1,4 @@
+import { Container } from "postcss";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,9 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "15px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        red: "#a60909",
+        accent:"#e46e00"
       },
     },
   },
